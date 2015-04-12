@@ -5,7 +5,7 @@
     $n=$n+1;
     $total = $n*($n+1)/2;
 
-   echo $missingNumber = $total - array_sum($numbers);
+   echo $missingNumber = $total - array_sum($numbers); // OUTPUT 4
 
 ?>
 
@@ -25,13 +25,12 @@ $array[$nextValue]=$c;
 $finalValue=$c;
 }
 }
-echo $finalValue;
+echo $finalValue; // OUTPUT: 11101
 ?>
 
 
 <?php 
 //3. Fibonacci series 
-<?php
 $count = 0 ;
 $first = 0;
 $second = 1;
@@ -45,4 +44,19 @@ $first = $second ;
 $second = $third ;
 $count = $count + 1;
 }
+// OUPUT : 0,1,1,2,3,5,8,13,21,34..
+?>
+
+
+<?php 
+//4. REVERSE the Given number 
+$number=12345;
+$reverse=0;
+while($number>0)
+{
+   $reverse=$reverse*10;
+   $reverse=$reverse+($number%10);
+   $number=(int)($number/10);
+}
+echo $reverse;  // OUPUT : 12345
 ?>
