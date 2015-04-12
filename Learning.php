@@ -27,3 +27,22 @@ $finalValue=$c;
 }
 echo $finalValue;
 ?>
+
+
+<?php 
+//3. Fibonacci series 
+<?php
+$count = 0 ;
+$first = 0;
+$second = 1;
+echo $first." , ";
+echo $second." , ";
+while ($count < 20 )
+{
+$third = $second + $first ;
+echo $third." , ";
+$first = $second ;
+$second = $third ;
+$count = $count + 1;
+}
+?>
