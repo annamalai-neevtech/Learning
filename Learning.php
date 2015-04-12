@@ -60,3 +60,22 @@ while($number>0)
 }
 echo $reverse;  // OUPUT : 12345
 ?>
+
+<?php 
+//5. Reverse the Words
+$str="How are You";
+$i=0;
+while($d=$str[$i])
+{
+   if($d==" ")
+   {
+      $out =" ".$temp.$out;
+      $temp="";
+   }
+   else
+   {
+      $temp.=$d;
+   }
+$i++;
+}
+echo $temp.$out; 
