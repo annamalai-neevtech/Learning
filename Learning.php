@@ -79,3 +79,23 @@ while($d=$str[$i])
 $i++;
 }
 echo $temp.$out; 
+?>
+
+<?php 
+//6. Reverse the String 
+$string="ABCDEFG";
+$i=0;
+while(isset($string[$i]))
+{
+   $i++;
+}
+
+$i--;
+
+while(isset($string[$i]))
+{
+   echo $string[$i];
+   $i--;
+}
+
+?>
